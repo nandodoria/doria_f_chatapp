@@ -88,7 +88,7 @@ form {
   color: #ffffff;
   border-radius: 8px;
   margin-bottom: 1rem;
-  float: left;
+  float: right;
   clear: both; }
   .new-message span {
     font-size: 0.8rem;
