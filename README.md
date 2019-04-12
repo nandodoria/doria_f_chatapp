@@ -15,6 +15,8 @@ $ npm start
 App will now be running on localhost:3000
 
 ```
+## Check It Out Live
+Visit https://doria-f-chatapp.herokuapp.com/ to truly chat live with your friends.
 
 ## Built With
 
