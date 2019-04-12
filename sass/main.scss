@@ -13,24 +13,29 @@ main {
 	flex-direction: row;
 }
 .form-container, .messages { padding: 20px; }
+
 .form-container { 
-	flex: 1; 
-	border: 6px solid #bfcfd6;
-	background-color: #e3edf1;
+	flex: 1;
+	background-color: #e1e8f0;
+	height: 100%;
+	position:fixed;
+   	left:0px;
+	top:0px;
+	width: 50%;
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
 
 .messages { 
 	flex: 2;
-	background-color: #eee;
-	border: 6px solid #e2e0e0; 
+	background-color: #ffffff; 
+	height: 100%;
 }
 
 input, textarea { 
 	display: block; 
 	width: 100%;
-	border: 2px solid #bfcfd6;
+	border: 2px solid #9068be;
 	//border-color: #bfcfd6; 
 	border-radius: 4px; 
 	font-size: 0.8rem; 
@@ -50,9 +55,22 @@ form {
 	input[type=submit] { 
 		width: auto; 
 		padding: 10px; 
-		background-color: rgb(75, 200, 17);
+		background-color: #6ed3cf;
+		border: 2px solid #6ed3cf;
 		margin-top: 1rem; 
-		border-radius: 8px;
+		color: white;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	input[type=submit]:hover { 
+		width: auto; 
+		padding: 10px; 
+		background-color:#9068be;
+		border: 2px solid #9068be;
+		transition: ease 0.5s;
+		margin-top: 1rem; 
 		color: white;
 		cursor: pointer;
 		text-transform: uppercase;
