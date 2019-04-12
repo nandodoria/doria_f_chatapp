@@ -5,6 +5,13 @@ const socket = io();
 function logConnect({sID, message}) {
     console.log(sID, message);
     vm.socketID = sID;
+	socket.emit('chat message', { content: "A new user has entered the chat", name: this.nickname || "ChatApp"});
+}
+
+function logDis({sID, message}) {
+    console.log(sID, message);
+    vm.socketID = sID;
+	socket.emit('chat message', { content: "A user has left the chat", name: this.nickname || "ChatApp"});
 }
 
 function appendMessage(message) {
@@ -38,5 +45,6 @@ const vm = new Vue({
 }).$mount(`#app`);
 
 socket.on('connected', logConnect);
+socket.on('disconnected', logDis);
 socket.addEventListener('chat message', appendMessage);
-socket.addEventListener('disconnect', appendMessage);
+//socket.addEventListener('disconnect', appendMessage);
