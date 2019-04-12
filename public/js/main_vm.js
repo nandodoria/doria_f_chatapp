@@ -9,7 +9,7 @@ function logConnect({sID, message}) {
 
 function appendMessage(message) {
     vm.messages.push(message);
-}
+} 
 
 //create vue instance
 const vm = new Vue({
